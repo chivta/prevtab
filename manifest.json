@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "prevtab",
+  "version": "1.0.0",
+  "description": "Jump back to the previously used tab, or the one before it.",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "switch-previous": {
+      "suggested_key": {
+        "default": "Ctrl+Q",
+        "mac": "Command+Q"
+      },
+      "description": "Switch to the previously used tab"
+    },
+    "switch-previous-previous": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Q",
+        "mac": "Command+Shift+Q"
+      },
+      "description": "Walk further back through tab history"
+    }
+  }
+}
